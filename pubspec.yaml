@@ -1,0 +1,25 @@
+name: one_day_auth
+description: "One day authorization package."
+version: 0.0.1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+  flutter: ">=1.17.0"
+
+dependencies:
+  firebase_auth: ^4.17.8
+  flutter:
+    sdk: flutter
+  flutter_facebook_auth: ^6.1.1
+  flutter_svg: ^2.0.10+1
+  fpdart: ^1.1.0
+  google_sign_in: ^6.2.1
+  provider: ^6.1.2
+
+dev_dependencies:
+  flutter_lints: ^3.0.1
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true

@@ -1,0 +1,47 @@
+include: package:flutter_lints/flutter.yaml
+
+linter:
+  rules:
+    # Error Rules
+    avoid_type_to_string: true # Avoid .toString() in production code since results may be minified
+    cancel_subscriptions: true # Cancel instances of dart.async.StreamSubscription
+    close_sinks: true # Close instances of dart.core.Sink
+    # Style Rules
+    always_declare_return_types: true # Declare method return types
+    avoid_multiple_declarations_per_line: true # Don't declare multiple variables on a single line
+    avoid_positional_boolean_parameters: true # Avoid positional boolean parameters
+    avoid_unused_constructor_parameters: true # Avoid defining unused parameters in constructors
+    avoid_void_async: true # Avoid async functions that return void
+    directives_ordering: true # Adhere to Effective Dart Guide directives sorting conventions
+    eol_at_end_of_file: true # Put a single newline at end of file
+    prefer_null_aware_method_calls: true # Prefer null aware method calls
+    prefer_single_quotes: true  # Only use double quotes for strings containing single quotes
+    require_trailing_commas: true # DO use trailing commas for all function calls and declarations unless the function call or definition, from the start of the function name up to the closing parenthesis, fits in a single line.
+    sort_child_properties_last: true # Sort child properties last in widget instance creations
+    sort_unnamed_constructors_first: true # DO sort unnamed constructor declarations first, before named ones
+    type_annotate_public_apis: true # Type annotate public APIs
+    unnecessary_await_in_return: true # Unnecessary await keyword in return
+    sort_pub_dependencies: true # Sort pub dependencies
+
+analyzer:
+  errors:
+    avoid_returning_null_for_future: error
+    avoid_unnecessary_containers: error
+    cancel_subscriptions: error
+    close_sinks: error
+    always_declare_return_types: error
+    avoid_multiple_declarations_per_line: error
+    avoid_positional_boolean_parameters: error
+    avoid_unused_constructor_parameters: error
+    avoid_void_async: error
+    prefer_single_quotes: error
+    sort_child_properties_last: error
+    sort_unnamed_constructors_first: error
+    type_annotate_public_apis: error
+    unnecessary_await_in_return: error
+    sort_pub_dependencies: error
+    missing_required_param: error
+    missing_return: error
+    parameter_assignments: error
+    prefer_const_constructors: error
+    sized_box_for_whitespace: error
